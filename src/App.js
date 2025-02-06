@@ -1,10 +1,9 @@
-
-import './App.css';
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="bg-pink h-screen">
-   <h1>hello</h1>
+    <div className="bg-green-500 h-screen">
+     <Home/>
     </div>
   );
 }
