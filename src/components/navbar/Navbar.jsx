@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
     <nav>
-      <div className="container">
+      <div className="container flex flex-row justify-center">
         <div>
          <FavoriteBorderIcon/>
          <AddShoppingCartIcon/>
@@ -27,7 +27,7 @@ function Navbar() {
         </div>
         {/*---------------logo section----------------------------------------*/}
         <div className='text-2xl flex items-center gap-2 font-bold py-8'> 
-          <p><span className='text-4xl text-first'>S</span>craby</p>
+          <p className=''>س<span className='text-first text-4xl'>ك</span>رابي</p>
           
         </div>
       </div>
