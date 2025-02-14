@@ -32,8 +32,6 @@ function Navbar() {
               navbarData.map((item)=>{
                 return <li key={item.id} >
                   <Link to={item.link} className='inline-block py-1 text-white hover:text-third font-semibold'>{item.title}</Link>
-                
-                  
                 </li>
               })
             }

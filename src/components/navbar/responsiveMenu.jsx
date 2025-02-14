@@ -1,5 +1,7 @@
 import React from 'react'
 import {motion , AnimatePresence} from 'framer-motion'
+import { navbarData } from '../Data/Navbar'
+import { Link } from 'react-router'
 const  ResponsiveMenu  = ({open})=> {
   return (
     <AnimatePresence mode='wait'>
@@ -14,10 +16,17 @@ const  ResponsiveMenu  = ({open})=> {
                 >
                   <div className='md:hidden text-2xl font-semibold bg-first text-white py-10 m-6 rounded-3xl'>
                     <ul className='flex flex-col justify-center items-center gap-10'>
-                        <li>الصفحة الرئيسية</li>
+                        {/* <Link>الصفحة الرئيسية</li>
                         <li>رجالي</li>
                         <li>نسائي</li>
-                        <li>اكسسوارات</li>
+                        <li>اكسسوارات</li> */}
+                        {
+                          navbarData.map((item)=>{
+                            return <li key={item.id}>
+                              <Link to={item.link}>{item.title}</Link>
+                            </li>
+                          })
+                        }
                     </ul>
                   </div>
                 </motion.div>
