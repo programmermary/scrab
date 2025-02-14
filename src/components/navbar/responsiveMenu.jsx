@@ -2,7 +2,7 @@ import React from 'react'
 import {motion , AnimatePresence} from 'framer-motion'
 import { navbarData } from '../Data/Navbar'
 import { Link } from 'react-router'
-const  ResponsiveMenu  = ({open})=> {
+const  ResponsiveMenu  = ({open , setOpen})=> {
   return (
     <AnimatePresence mode='wait'>
         {
@@ -12,6 +12,7 @@ const  ResponsiveMenu  = ({open})=> {
                 animate={{opacity:1 , y:0}}
                 transition={{duration:0.5}}
                 exit={{opacity:0 , y:-100}}
+                onClick={()=>setOpen(false)}
 
                 >
                   <div className='md:hidden text-2xl font-semibold bg-first text-white py-10 m-6 rounded-3xl'>
