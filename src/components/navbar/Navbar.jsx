@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { navbarData } from '../Data/Navbar'
+import { Link } from "react-router-dom";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
@@ -30,7 +31,9 @@ function Navbar() {
             {
               navbarData.map((item)=>{
                 return <li key={item.id} >
-                  <a href={item.link} className='inline-block py-1 hover:text-first font-semibold'>{item.title}</a>
+                  <Link to={item.link} className='inline-block py-1 text-white hover:text-third font-semibold'>{item.title}</Link>
+                
+                  
                 </li>
               })
             }
