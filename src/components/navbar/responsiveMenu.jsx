@@ -15,7 +15,7 @@ const  ResponsiveMenu  = ({open , setOpen})=> {
                 onClick={()=>setOpen(false)}
 
                 >
-                  <div className='md:hidden text-2xl font-semibold bg-first text-white py-10 m-6 rounded-3xl'>
+                  <div className='md:hidden text-lg font-semibold bg-first text-white py-10 m-6 rounded-3xl'>
                     
                     <ul className='flex flex-col justify-center items-center gap-10'>
                     
