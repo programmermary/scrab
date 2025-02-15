@@ -16,11 +16,10 @@ const  ResponsiveMenu  = ({open , setOpen})=> {
 
                 >
                   <div className='md:hidden text-2xl font-semibold bg-first text-white py-10 m-6 rounded-3xl'>
+                    
                     <ul className='flex flex-col justify-center items-center gap-10'>
-                        {/* <Link>الصفحة الرئيسية</li>
-                        <li>رجالي</li>
-                        <li>نسائي</li>
-                        <li>اكسسوارات</li> */}
+                    
+                      
                         {
                           navbarData.map((item)=>{
                             return <li key={item.id}>
@@ -28,7 +27,9 @@ const  ResponsiveMenu  = ({open , setOpen})=> {
                             </li>
                           })
                         }
+                        <button className=' bg-third text-black font-semibold hover:text-first rounded-md border-2 border-first px-6 py-2 duration-200  md:block'>تسجيل دخول</button>
                     </ul>
+                    
                   </div>
                 </motion.div>
             )

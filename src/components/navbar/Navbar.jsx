@@ -6,12 +6,13 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MenuIcon from '@mui/icons-material/Menu';
 import ResponsiveMenu from './responsiveMenu';
+import logo from '../../assets/logo.png'
 function Navbar() {
   const [open , setOpen] = useState(false)
   return (
     <>
-    <nav className='w-full bg-first'>
-      <div className="container flex justify-between items-center  bg-first">
+    <nav className='w-full h-full bg-first flex justify-between items-center '>
+      <div className="container flex justify-between items-center  ">
         {/*------------------icon section and login button--------------------- */}
         <div className='flex item-center gap-4'>
         <button className=' bg-third text-black font-semibold hover:text-first rounded-md border-2 border-first px-6 py-2 duration-200 hidden md:block'>تسجيل دخول</button>
@@ -38,8 +39,8 @@ function Navbar() {
           </ul>
         </div>
         {/*---------------logo section----------------------------------------*/}
-        <div className='text-2xl flex items-center gap-2 font-bold py-8'> 
-          <p className=''>س<span className='text-white text-4xl'>ك</span>رابي</p>
+        <div className='text-2xl flex items-center gap-2 font-bold py-8 md:block hidden w-[15%]'> 
+          <img src={logo} alt='logo'/>
         </div>
         {/*------------------humbergur section --------------------- */}
         <div className='md:hidden' onClick={()=>setOpen(!open)}>

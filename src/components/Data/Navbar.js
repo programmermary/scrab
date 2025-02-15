@@ -1,3 +1,4 @@
+
 export const navbarData = [
     { 
         id:1,
@@ -20,4 +21,7 @@ export const navbarData = [
         title:"الصفحة الرئيسية",
         link:"/"
     }
-]
+];
+
+
+
