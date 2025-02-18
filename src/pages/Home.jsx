@@ -1,13 +1,12 @@
 import React from 'react';
-import { Slider } from '../components/slider/Slider';
-
+import Hero from '../components/Hero/Hero';
 function Home() {
   return (
-    <div className="flex flex-grow h-full items-center justify-center bg-red-600">
-      <div className="sliderDev w-full h-full bg-gray-600">
-      <Slider />
+    <div className="flex flex-grow h-full items-center justify-center ">
+      <div className="sliderDev w-full h-full ">
+        <Hero/>
       </div>
-      {/* <Slider /> */}
+    
     </div>
   );
 }

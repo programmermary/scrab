@@ -15,7 +15,7 @@ function App() {
         <div className='h-[10%]'>
         <Navbar />
         </div>
-        <div className='bg-red-600 h-[90%]'>
+        <div className=' h-[90%]'>
         <AppRoutes />
         </div>
       </div>
