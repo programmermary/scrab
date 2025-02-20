@@ -20,7 +20,8 @@ export const navbarData = [
         id:4,
         title:"الصفحة الرئيسية",
         link:"/"
-    }
+    },
+   
 ];
 
 

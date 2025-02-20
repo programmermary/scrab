@@ -15,7 +15,10 @@ function Navbar() {
       <div className="container flex justify-between items-center  ">
         {/*------------------icon section and login button--------------------- */}
         <div className='flex item-center gap-4'>
-        <button className=' bg-third text-black font-semibold hover:text-first rounded-md border-2 border-first px-6 py-2 duration-200 hidden md:block'>تسجيل دخول</button>
+        <Link to='/login'>
+        <button className=' bg-third text-black font-semibold hover:text-first
+         rounded-md border-2 border-first px-6 py-2 duration-200 hidden md:block'>تسجيل دخول</button>
+        </Link>
         <button className='text-2xl hover:bg-first hover:text-white rounded-full p-2 duration-200'>
             <PersonOutlineIcon/>
           </button>
