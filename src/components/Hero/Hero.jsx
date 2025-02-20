@@ -6,12 +6,12 @@ const Hero = () => {
         <div className="container w-screen h-screen gird grid-cols-1 md:grid-cols-2 ">
      
           <div className="main h-full w-full  flex flex-col md:flex-row items-center">
-          <div className="image hidden md:block w-1/2 h-3/4 ">
+          <div className="image  md:block w-full  ">
               <img src={DoctorsCuate} alt="" 
-              className='w-3/4 h-full'
+              
               />
             </div>
-            <div className="text w-1/2 flex flex-col 
+            <div className="text w-[90%] flex flex-col 
             justify-center gap-8 p-1 text-right">
                 <div className="innerText space-y-6">
                 <h1 className='text-3xl md:text-5xl font-bold leading-relaxed  
