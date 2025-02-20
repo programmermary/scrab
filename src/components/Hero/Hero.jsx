@@ -1,5 +1,5 @@
 import React from 'react'
-import femaleDoctorWithLabCoat from '../../assets/femaleDoctorWithLabCoat.png'
+import DoctorsCuate from '../../assets/DoctorsCuate.svg'
 const Hero = () => {
   return (
     <section>
@@ -7,7 +7,9 @@ const Hero = () => {
      
           <div className="main h-full w-full  flex flex-col md:flex-row items-center">
           <div className="image hidden md:block w-1/2 h-3/4 ">
-              <img src={femaleDoctorWithLabCoat} alt="" />
+              <img src={DoctorsCuate} alt="" 
+              className='w-3/4 h-full'
+              />
             </div>
             <div className="text w-1/2 flex flex-col 
             justify-center gap-8 p-1 text-right">
@@ -23,7 +25,8 @@ const Hero = () => {
                </p>
                 </div>
                <button className='text-first border-first border p-3
-                rounded hover:text-white hover:bg-first self-right w-full md:w-1/4 self-center'>
+                rounded hover:text-white hover:bg-first self-right
+                 w-full md:w-1/4 self-center hover:shadow-xl hover:shadow-first'>
                   تسوق الان</button>
             </div>
             

@@ -2,7 +2,7 @@
  export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    
+
     extend: {
       fontFamily:{
         Alexandria:[
@@ -18,6 +18,8 @@
         center:true,
         padding:{
           default:"0.5rem",
+          
+         
         },
     
       }
