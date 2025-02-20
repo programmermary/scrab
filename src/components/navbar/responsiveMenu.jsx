@@ -27,7 +27,11 @@ const  ResponsiveMenu  = ({open , setOpen})=> {
                             </li>
                           })
                         }
-                        <button className=' bg-third text-black font-semibold hover:text-first rounded-md border-2 border-first px-6 py-2 duration-200  md:block'>تسجيل دخول</button>
+                        <Link to='/login'>
+                        <button className=' bg-third text-black font-semibold hover:text-first
+                         rounded-md border-2 border-first px-6 py-2 duration-200  md:block'>تسجيل دخول
+                         </button>
+                        </Link>
                     </ul>
                     
                   </div>

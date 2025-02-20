@@ -4,6 +4,10 @@
   theme: {
 
     extend: {
+      // backgroundImage:{
+      //   'hero-pattern':"url('../assest/LoginImg.png')"
+      // },
+
       fontFamily:{
         Alexandria:[
           "Alexandria" , "serif"
@@ -12,7 +16,8 @@
       colors:{
         first:"#245d66",
         second:"#da3f3f",
-        third:"#e9e9e9"
+        third:"#e9e9e9",
+        forth:"#3ea2b2"
       },
       container:{
         center:true,
@@ -23,6 +28,7 @@
         },
     
       }
+     
     },
   },
   plugins: [],
