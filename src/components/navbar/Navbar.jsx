@@ -15,7 +15,14 @@ function Navbar() {
     <nav className='w-full h-full bg-first flex justify-between items-center '>
       <div className="container flex justify-between items-center  ">
         {/*------------------icon section and login button--------------------- */}
-        <div className='flex item-center gap-4'>
+
+        <div className='flex justify-center items-center item-center gap-4'>
+          {
+            location.pathname !== '/registration' &&  <Link to='/registration '><a href={'/registration'} 
+            className='text-white text-center'
+            >انشاء حساب</a> </Link>
+          }
+         
           {
             location.pathname !== "/login"&& <Link to='/login'>
             <button className=' bg-third text-black font-semibold hover:text-first

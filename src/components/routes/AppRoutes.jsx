@@ -4,6 +4,8 @@ import Home from '../../pages/Home';
 import Man from '../../pages/Man'
 import Woman from '../../pages/Woman'
 import Login from '../../pages/Login';
+import RegistrationPage from '../../pages/RegistrationPage';
+
 const AppRoutes = () => {
   return (
    
@@ -12,6 +14,7 @@ const AppRoutes = () => {
             <Route path='/men' element={<Man/>}/>
             <Route path='/women' element={<Woman/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='registration' element={<RegistrationPage/>}/>
         </Routes>
    
   )
