@@ -13,7 +13,7 @@ const RegistrationPage =() => {
   const handelSubmit = async (e) => {
   e.preventDefault()
   try{
-    const reponse = await axios.post('mongodb+srv://maryamihsan601:iNOAaEDBUUxWlLDk@cluster0.8td0dum.mongodb.net/ScrabDataBase' ,{
+    const reponse = await axios.post('mongodb+srv://maryamihsan601:iNOAaEDBUUxWlLDk@cluster0.8td0dum.mongodb.net/ScrabDataBase/users' ,{
       name,
       email,
       password
