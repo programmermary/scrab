@@ -34,11 +34,11 @@ const Login = () => {
      <div className='flex flex-col self-start pl-2
       md:self-center md:gap-5
      '>
-     <a href="">
+     <a href="#">
      <h5>forget password?</h5>
      </a>
       <h5>Don't have account?
-        <a href="">SignUp</a>
+        <a href="#">SignUp</a>
       </h5>
      </div>
       </div>
