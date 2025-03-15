@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import LoginImg from '../assets/LoginImg.png'
 const Login = () => {
