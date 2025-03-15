@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { navbarData } from '../Data/Navbar'
-import { Link } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ResponsiveMenu from './responsiveMenu';
 import logo from '../../assets/logo.png'
 function Navbar() {
+  const location = useLocation()
   const [open , setOpen] = useState(false)
   return (
     <>
@@ -15,10 +16,13 @@ function Navbar() {
       <div className="container flex justify-between items-center  ">
         {/*------------------icon section and login button--------------------- */}
         <div className='flex item-center gap-4'>
-        <Link to='/login'>
-        <button className=' bg-third text-black font-semibold hover:text-first
-         rounded-md border-2 border-first px-6 py-2 duration-200 hidden md:block'>تسجيل دخول</button>
-        </Link>
+          {
+            location.pathname !== "/login"&& <Link to='/login'>
+            <button className=' bg-third text-black font-semibold hover:text-first
+             rounded-md border-2 border-first px-6 py-2 duration-200 hidden md:block'>تسجيل دخول</button>
+            </Link>
+          }
+        
         <button className='text-2xl hover:bg-first hover:text-white rounded-full p-2 duration-200'>
             <PersonOutlineIcon/>
           </button>

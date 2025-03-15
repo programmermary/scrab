@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import SignUp from '../assets/SignUp.png'
+
 import LoginImg from '../assets/LoginImg.png'
 const Login = () => {
-    const [isSignUp , setIsSignUp] = useState(false)
+    
   return (
    <div className='  w-screen min-h-full   flex 
    flex-col items-center justify-start gap-2 
