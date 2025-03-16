@@ -18,9 +18,9 @@ function Navbar() {
 
         <div className='flex justify-center items-center item-center gap-4'>
           {
-            location.pathname !== '/registration' &&  <Link to='/registration '><a href={'/registration'} 
-            className='text-white text-center'
-            >انشاء حساب</a> </Link>
+            location.pathname !== '/registration' &&  <Link to='/registration '>
+            
+            انشاء حساب </Link>
           }
          
           {

@@ -7,12 +7,12 @@ const Login = () => {
    flex-col items-center justify-start gap-2 
    md:flex-row lg:flex-row
    '>
-     <div className='w-1/2 h-3/4'>
-     <img src={LoginImg} alt="" className='self-left w-3/4 ' />
+     <div className='w-full flex justify-center  md:w-1/2 h-3/4'>
+     <img src={LoginImg} alt="" className='w-full md:self-left md:w-3/4 ' />
      </div>
      
      
-      <div className='w-1/2 flex flex-col items-center justify-evenly
+      <div className='w-full md:w-1/2 flex flex-col items-center justify-evenly
         h-full gap-1
       '>
       <h2 className='text-first font-semibold text-3xl pt-12'>welcome back</h2>

@@ -1,5 +1,6 @@
 import React from 'react'
 import DoctorsCuate from '../../assets/DoctorsCuate.svg'
+import { Link } from 'react-router'
 const Hero = () => {
   return (
     <section>
@@ -24,10 +25,12 @@ const Hero = () => {
                  وآمنة واحصل على كل ما تحتاجه لتعزيز أدائك في العمل.
                </p>
                 </div>
+               <Link to='/home/cards'>
                <button className='text-first border-first border p-3
                 rounded hover:text-white hover:bg-first self-right
                  w-full md:w-1/4 self-center hover:shadow-xl hover:shadow-first'>
                   تسوق الان</button>
+               </Link>
             </div>
             
           </div>

@@ -3,13 +3,14 @@ import dotenv from "dotenv";
 
 dotenv.config()//load envirment variable for .env file
 
+const mongo_Url = process.env.MONGO_URL
 const Dbconnect = async () => {
  try{
-    await mongoose.connect("mongodb+srv://maryamihsan601:iNOAaEDBUUxWlLDk@cluster0.8td0dum.mongodb.net/ScrabDataBase", {
+    await mongoose.connect(mongo_Url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });
-      console.log("MongoDB connected successfully");
+      console.log("MongoDB connected ");
  }
  catch(error)
  {

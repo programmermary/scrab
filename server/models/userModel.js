@@ -5,7 +5,7 @@ const Usershcema = new mongoose.Schema({
     name:{
         type:String,
         require:true,
-        minlength:15,
+        minlength:4,
     },
     email:{
         type:String,
@@ -13,10 +13,10 @@ const Usershcema = new mongoose.Schema({
         unique:true,
          match: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
     },
-    Password:{
+    password:{
     type:String ,
     require:true,
-    minlength:6
+    minlength:6,
     },
 },
 { timestamps:true},
