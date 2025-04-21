@@ -4,7 +4,7 @@ export const CardsData = [
         id:1,
         name:"name1",
         size:"3xl",
-        color:["red","blue","orange"],
+        colors:["red","blue","orange"],
         rate:"5",
         image:SignUp
     },
@@ -12,7 +12,7 @@ export const CardsData = [
         id:2,
         name:"name2",
         size:"2xl",
-        color:"blue",
+        colors:["blue"],
         rate:"4.5",
         image:"https://cdn.shopify.com/s/files/1/0139/8942/products/mens-chisec-scrub-top-caribbean-blue-1_900x900_crop_bottom.jpg?v=1550881765"
     },
@@ -20,7 +20,7 @@ export const CardsData = [
         id:3,
         name:"name3",
         size:"xl",
-        color:"green",
+        colors:["green"],
         rate:"3",
         image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q4_2024_10_EVERGREEN_CHISEC_SCOTT_1891.jpg?v=1734030098&width=1440"
 
@@ -29,7 +29,7 @@ export const CardsData = [
         id:4,
         name:"name4",
         size:"3xl",
-        color:"black",
+        colors:["black"],
         rate:"5",
         image:"https://www.wearfigs.com/i/contentful/5j6wpslh72e4/6QuuQQJbvrj1IlbNccTHdG/59a86cea6bb7c6736b79f1798b87a209/Q2_2022_05_BLACK_CHISEC_M_MOOSE_31893.jpg?fm=webp&w=1440"
     },
@@ -37,7 +37,7 @@ export const CardsData = [
         id:5,
         name:"name5",
         size:"s",
-        color:"purble",
+        colors:["pink"],
         rate:"4",
         image:"https://th.bing.com/th/id/OIP.h-fIVuvqUBrvN-26WtL09AHaHa?pid=ImgDet&w=474&h=474&rs=1"
     },
@@ -45,7 +45,7 @@ export const CardsData = [
         id:6,
         name:"name6",
         size:"3xl",
-        color:"brown",
+        colors:["brown"],
         rate:"5",
         image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q3_2024_8_PUMPKINSPICE_CHISEC_SCOTT_194.jpg?v=1727823849&width=1440"
     },
@@ -53,7 +53,7 @@ export const CardsData = [
         id:7,
         name:"name7",
         size:"3xl",
-        color:"red",
+        colors:["red"],
         rate:"5",
         image:"https://th.bing.com/th/id/OIP.lHpvZuRQ62U8iEwWI6NjfAHaHa?pid=ImgDet&w=474&h=474&rs=1"
     },
