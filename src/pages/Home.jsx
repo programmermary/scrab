@@ -6,7 +6,6 @@ function Home() {
       <div className="sliderDev w-full h-full ">
         <Hero/>
       </div>
-    
     </div>
   );
 }
