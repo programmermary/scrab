@@ -14,7 +14,7 @@ const CardsBody = ()=>{
                         "
                         key={index}>
                             <div className="img w-[90%] ">
-                                <img src={card.image} alt="image for scrab" 
+                                <img src={card.image} alt="scrab" 
                                 />
                             </div>
                             <div className="details flex flex-col justify-center items-center gap-2">
