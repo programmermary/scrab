@@ -6,7 +6,8 @@ export const CardsData = [
         size:"3xl",
         colors:["red","blue","orange"],
         rate:"5",
-        image:SignUp
+        image:SignUp,
+        price:'$50'
     },
     {
         id:2,
@@ -14,7 +15,8 @@ export const CardsData = [
         size:"2xl",
         colors:["blue"],
         rate:"4.5",
-        image:"https://cdn.shopify.com/s/files/1/0139/8942/products/mens-chisec-scrub-top-caribbean-blue-1_900x900_crop_bottom.jpg?v=1550881765"
+        image:"https://cdn.shopify.com/s/files/1/0139/8942/products/mens-chisec-scrub-top-caribbean-blue-1_900x900_crop_bottom.jpg?v=1550881765",
+        price:'$50'
     },
     {
         id:3,
@@ -22,7 +24,8 @@ export const CardsData = [
         size:"xl",
         colors:["green"],
         rate:"3",
-        image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q4_2024_10_EVERGREEN_CHISEC_SCOTT_1891.jpg?v=1734030098&width=1440"
+        image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q4_2024_10_EVERGREEN_CHISEC_SCOTT_1891.jpg?v=1734030098&width=1440",
+        price:'$50'
 
     },
     {
@@ -31,7 +34,8 @@ export const CardsData = [
         size:"3xl",
         colors:["black"],
         rate:"5",
-        image:"https://www.wearfigs.com/i/contentful/5j6wpslh72e4/6QuuQQJbvrj1IlbNccTHdG/59a86cea6bb7c6736b79f1798b87a209/Q2_2022_05_BLACK_CHISEC_M_MOOSE_31893.jpg?fm=webp&w=1440"
+        image:"https://www.wearfigs.com/i/contentful/5j6wpslh72e4/6QuuQQJbvrj1IlbNccTHdG/59a86cea6bb7c6736b79f1798b87a209/Q2_2022_05_BLACK_CHISEC_M_MOOSE_31893.jpg?fm=webp&w=1440",
+        price:'$50'
     },
     {
         id:5,
@@ -39,7 +43,8 @@ export const CardsData = [
         size:"s",
         colors:["pink"],
         rate:"4",
-        image:"https://th.bing.com/th/id/OIP.h-fIVuvqUBrvN-26WtL09AHaHa?pid=ImgDet&w=474&h=474&rs=1"
+        image:"https://th.bing.com/th/id/OIP.h-fIVuvqUBrvN-26WtL09AHaHa?pid=ImgDet&w=474&h=474&rs=1",
+        price:'$50'
     },
     {
         id:6,
@@ -47,7 +52,8 @@ export const CardsData = [
         size:"3xl",
         colors:["brown"],
         rate:"5",
-        image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q3_2024_8_PUMPKINSPICE_CHISEC_SCOTT_194.jpg?v=1727823849&width=1440"
+        image:"https://www.wearfigs.com/i/shopify/s/files/1/0139/8942/files/Q3_2024_8_PUMPKINSPICE_CHISEC_SCOTT_194.jpg?v=1727823849&width=1440",
+        price:'$50'
     },
     {
         id:7,
@@ -55,6 +61,7 @@ export const CardsData = [
         size:"3xl",
         colors:["red"],
         rate:"5",
-        image:"https://th.bing.com/th/id/OIP.lHpvZuRQ62U8iEwWI6NjfAHaHa?pid=ImgDet&w=474&h=474&rs=1"
+        image:"https://th.bing.com/th/id/OIP.lHpvZuRQ62U8iEwWI6NjfAHaHa?pid=ImgDet&w=474&h=474&rs=1",
+        price:'$50'
     },
 ]

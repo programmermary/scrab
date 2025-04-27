@@ -6,6 +6,7 @@ import Woman from '../../pages/Woman'
 import Login from '../../pages/Login';
 import RegistrationPage from '../../pages/RegistrationPage';
 import CardsPage from '../../pages/CardsPage';
+import CardDetails from '../cards/CardDetails';
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
             <Route path='/login' element={<Login/>}/>
             <Route path='registration' element={<RegistrationPage/>}/>
             <Route path='/home/cards' element={<CardsPage/>}/>
+            <Route path='home/cards/:id' element={<CardDetails/>}/>
         </Routes>
    
   )
