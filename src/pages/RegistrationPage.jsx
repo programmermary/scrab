@@ -12,13 +12,6 @@ const RegistrationPage =() => {
 
   const [registration , setRegistration] = useState(false)
 
-  const handelRegistration = () => {
-    if(registration){
-      return(
-        <h1>لقد تم تسجيل دخولك الى البرنامج</h1>
-      )
-    }
-  }
 
   const handelSubmit = async (e) => {
   e.preventDefault()
@@ -33,6 +26,12 @@ const RegistrationPage =() => {
     setEmail('')
     setPassword('')
     setRegistration(true)
+
+    if(registration){
+      return(
+        <h1>لقد تم تسجيل دخولك الى البرنامج</h1>
+      )
+    }
   }
   catch(err){
     setError(err.response?.data?.message || 'Error during registration');
