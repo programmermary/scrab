@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { CardsData } from '../Data/cards';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const CardDetails = () => {
     const {id} = useParams();
     const card = CardsData.find(c => c.id === parseInt(id));
@@ -11,6 +12,12 @@ const CardDetails = () => {
 
         items-center
         flex-col md:flex-row '>
+          <div className='arrow self-start'>
+            <a href="/home/cards" className='flex items-center gap-2'>
+                <ArrowBackIcon className='text-first' />
+                <h1 className='text-first'>Back</h1>
+            </a>
+          </div>
           <div className="images flex   h-1/2 p-4
           flex-col md:flex-row gap-4">
             <div className="mainImage md:w-3/4 w-3/4 
@@ -25,7 +32,8 @@ const CardDetails = () => {
             <img src={card.image} alt='scrab'/>
             </div>
           </div>
-          <div className="line bg-gray-200 md:h-full md:w-[5px] h-[5px] w-full">.</div>
+          <div className="line bg-gray-200 md:h-full
+          m-4 md:w-[5px] h-[5px] w-full">.</div>
           <div className="deatils w-full  h-1/2 p-4 flex flex-col 
           justify-start items-center gap-4">
             <div className="cardDetails">
