@@ -9,13 +9,13 @@ const ProductUploader = () => {
   const [rate, setRate]                   = useState('');
   const [numberOfPices, setNumberOfPices] = useState('');
   const [gender, setGender]               = useState('');
-  const [image, setImage]                 = useState(null);
+
 
   const submitDetails = async (e) => {
     e.preventDefault();
 
     // 1️⃣ stop if image is missing
-    if (!image) return alert('Please choose an image first');
+  
 
     // 2️⃣ build FormData
     const formData = new FormData();
@@ -26,7 +26,7 @@ const ProductUploader = () => {
     formData.append('rate', rate);
     formData.append('gender', gender);
     formData.append('number_of_pices', numberOfPices);
-    formData.append('image', image);              // must match Xano field name
+              // must match Xano field name
 
     // (Optional) log to verify everything is there
     // for (const p of formData.entries()) console.log(p[0], p[1]);
@@ -46,7 +46,7 @@ const ProductUploader = () => {
       setRate('');
       setGender('');
       setNumberOfPices('');
-      setImage(null);
+   
     } catch (error) {
       console.error(error.response?.data || error);
       alert('Error uploading product');
@@ -72,12 +72,7 @@ const ProductUploader = () => {
         placeholder="Number of pieces"
         type="number"
       />
-      <input
-        required
-        type="file"
-        accept="image/*"
-        onChange={e => setImage(e.target.files[0])}
-      />
+      
       <button type="submit">Submit Product</button>
     </form>
   );
