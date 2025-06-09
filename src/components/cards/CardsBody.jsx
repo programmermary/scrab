@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const CardsBody = () => {
   return (
-    <div className="mainBody bg-red-200 flex flex-col justify-center items-center gap-4">
+    <div className="mainBody md:w-full md:flex-row md:flex-warp flex flex-col justify-center items-center gap-4
+    md:grid md:grid-cols-4 ">
       {CardsData.map((card, index) => (
         <Link 
           to={`/home/cards/${card.id}`} 
@@ -13,7 +14,7 @@ const CardsBody = () => {
         >
           <div className="card self-center flex flex-col justify-center items-center gap-2 bg-white w-[90%] cursor-pointer
           transition-transform transform hover:-translate-y-2 hover:shadow-lg p-2 rounded-lg
-           ">
+           md:w-full">
 
             <div className="img w-full">
               <img src={card.image} alt="scrab" className="w-full" />

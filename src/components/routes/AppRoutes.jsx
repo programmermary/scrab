@@ -5,8 +5,9 @@ import Man from '../../pages/Man'
 import Woman from '../../pages/Woman'
 import Login from '../../pages/Login';
 import RegistrationPage from '../../pages/RegistrationPage';
-import CardsPage from '../../pages/CardsPage';
+// import CardsPage from '../../pages/CardsPage';
 import CardDetails from '../cards/CardDetails';
+import NewProducts from '../../AddProduct/NewProducts';
 
 const AppRoutes = () => {
   return (
@@ -17,8 +18,9 @@ const AppRoutes = () => {
             <Route path='/women' element={<Woman/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='registration' element={<RegistrationPage/>}/>
-            <Route path='/home/cards' element={<CardsPage/>}/>
+            {/* <Route path='/home/cards' element={<CardsPage/>}/> */}
             <Route path='home/cards/:id' element={<CardDetails/>}/>
+            <Route path='/newproducts' element={<NewProducts/>}/>
         </Routes>
    
   )

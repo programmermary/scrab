@@ -10,25 +10,27 @@ const CardDetails = () => {
     return(
       
 
-        <div className='main  w-full h-full flex flex-col '>
-          <div className="arrow h-[5%] w-full ">
+        <div className='main  w-full h-full flex flex-col md:flex-row '>
+          <div className="arrow md:self-center h-[5%] w-full md:w-[5%] ">
           <a href="/home/cards" className='flex items-center'>
                 <ArrowBackIcon className='text-first ' />
                 <h1 className='text-first'>Back</h1>
           </a>
           </div>
-          <div className="images h-[65%]   flex flex-col
-                          items-center justify-start gap-2">
-            <div className="mainImage h-3/4 w-3/4 ">
+          <div className="images h-[65%]  flex flex-col
+                          items-center justify-start gap-2
+                          md:w-[65%] md:h-full md:flex-row">
+            <div className="mainImage md:w-1/2 md:h-full  h-3/4 w-3/4 ">
             <img src={card.image} alt="scrab" />
             </div>
-            <div className="smallImages justify-center h-1/4 w-1/2  flex gap-2">
-            <img src={card.image} alt='scrab'/>
+            <div className="smallImages  justify-center h-1/4 w-1/2  flex gap-2
+            md:flex-col md:h-full md:w-[10%] md:jusrify-center md:items-center"> 
+            <img src={card.image} alt='scrab '/>
              <img src={card.image} alt='scrab'/>
              <img src={card.image} alt='scrab'/>
             </div>
           </div>
-          <div className="details flex flex-col  h-[25%]">
+          <div className="details flex flex-col md:h-full md:w-[30%]  h-[25%]">
             <div className="Text flex flex-col items-center  h-[70%]">
               <h1 className='font-semibold text-3xl'>{card.name}</h1>
               <h2 className='text-lg'>{card.price}</h2>
@@ -51,11 +53,11 @@ const CardDetails = () => {
                 ))}
               </div>
             </div>
-            <div className="btns  h-[40%] flex gap-2">
+            <div className="btns   h-[40%] flex gap-2">
             <input type="button" value="Buy"
-               className='border-2 border-first w-1/2 rounded h-full' />
+               className='border-2 border-first w-1/2 rounded h-full md:h-1/4' />
              <input type="button" value="Add To baskt"
-              className='bg-first w-1/2 rounded text-white h-full' />
+              className='bg-first w-1/2 rounded text-white h-full md:h-1/4 cursor-pointer' />
             </div>
           </div>
         </div>
